@@ -74,7 +74,7 @@ const App = () => {
             if (odometry.mode) {
               setModeValue(odometry.mode);
             }
-            if (odometry.time !== 0) {
+            if (odometry.time) {
               setTimeValue(odometry.time);
             }
           }

@@ -11,7 +11,7 @@ app.use(cors());
 // Function to read and parse the log file
 async function readLogFile() {
     try {
-        const data = await fs.readFile('./scans.txt', 'utf8');
+        const data = await fs.readFile('./scans.json', 'utf8');
         const lidarData = JSON.parse(data);
         return lidarData;
     } catch (err) {
